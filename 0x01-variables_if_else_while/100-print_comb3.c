@@ -6,13 +6,13 @@
  *
  * Return: Aways 0 (Success)
  */
-int main (void)
+int main(void)
 {
-	int p,d;
+	int p, d;
 
 	for (p = '0'; p < '9'; p++)
 	{
-	for (d = p+1; d <= '9'; d++)
+	for (d = p + 1; d <= '9'; d++)
 	{
 	if (p != d)
 	{
