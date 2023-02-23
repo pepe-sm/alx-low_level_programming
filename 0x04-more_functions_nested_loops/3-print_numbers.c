@@ -5,9 +5,10 @@
  * Return: The number from 0 to 9
  */
 
-void prints_numbers(void)
+void print_numbers(void)
 {
 	int x;
+
 	for (x = 0; x <= 9; x++)
 	{
 	_putchar(x + '0');
