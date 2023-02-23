@@ -1,12 +1,12 @@
 #include"main.h"
 
 /**
- * print_triangle - Prints tringale of squares
- * @size: the size of squares
- * return: empty
+ * print_triangle -  prints triagle of squares
+ * @size: check int
+ * Return: empty
  */
 
-void print_triange(int size)
+void print_triangle(int size)
 {
 	int x, y, z;
 
