@@ -7,7 +7,7 @@
  * Return: string
  */
 
-char _strcpy(char *dest, char *scr)
+char *_strcpy(char *dest, char *scr)
 {
 	int len = 0;
 
