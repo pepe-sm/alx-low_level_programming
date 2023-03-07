@@ -2,7 +2,6 @@
 #define MAIN_h
 
 
-#include<stddef>
 
 int _putchar.c
 char *_memset(char *s, char b, unsigned int n);
