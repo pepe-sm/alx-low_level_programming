@@ -6,9 +6,10 @@
  * Return: 0 on success
  */
 
-voidprint_chessboard(char (*a)[8])
+void print_chessboard(char (*a)[8])
 {
 	int i, n;
+
 	for (i = 0; i < 8; i++)
 	{
 	for (n = 0; n < 8; n++)
