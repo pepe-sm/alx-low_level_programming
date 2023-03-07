@@ -1,4 +1,5 @@
 #include"main.h"
+#include<stdio.h>
 
 /**
  * _strspn - entry point
@@ -31,8 +32,7 @@ unsigned int _strspn(char *s, char *accept)
 		return ('0');
 	}
 	else
-		return (value);
-
+		return(accept);
 	}
-	return (0);
+	return (NULL);
 }
