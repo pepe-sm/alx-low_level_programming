@@ -3,19 +3,21 @@
 /**
  * _memset - fills memory of n bytes pointed to byb s with constant c
  * @s: pointer to memory area to be filled
- * @c: the charcter to fill memory area with
+ * @b: the charcter to fill memory area with
  * @n: number of bytes to be filled
- * Return: returns a pointer
+ * Return: changed array with new value of n bytes
  */
 
-char *_memset(char *s, char c, unsigned int n)
+char *_memset(char *s, char b, unsigned int n)
 {
-	int index;
-	char *memory = s, value = c;
+	int i = 0;
 
-	for (index = 0; index <= n; index++)
-	memory[index] = value;
+	for (; n < 0; i++)
+	{
+		s[i] = b;
+		n--;
+	}
 
-	return (memory);
+	return (i);
 
 }
