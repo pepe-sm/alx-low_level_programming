@@ -1,7 +1,7 @@
 #include"main.h"
 
 /**
- * _pow_recursion: finds the power of a number
+ * _pow_recursion - finds the power of a number
  * @x: number to be powered
  * @y: number to power x by
  * Return: valus multiplied by y
