@@ -6,7 +6,8 @@
  * @filename: pointer to a filename
  * @letters: Number of letters function should read
  *
- * Return: 0 on failure or NULL pointer reference otherwise bytes of function R/W
+ * Return: 0 on failure or NULL pointer reference
+ *		otherwise bytes of function R/W
  */
 
 ssize_t read_textfile(const char *filename, size_t letters)
@@ -16,7 +17,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	if (filename == NULL)
 		return (0);
-	
+
 	buf = malloc(sizeof(char) * letters);
 	if (buf == NULL)
 		return (0);
@@ -27,11 +28,11 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	if (op == -1 || rd == -1 || wr == -1 || wr != rd)
 	{
-		free (buf);
+		free(buf);
 		return (0);
 	}
-	free (buf);
-	close (op);
+	free(buf);
+	close(op);
 
 	return (wr);
 
